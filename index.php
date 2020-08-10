@@ -1,14 +1,15 @@
 <?php
 session_start();
+if(!empty($_SESSION['errors']['empty'])){
+   echo $_SESSION['errors']['empty'];
+}
 if(!empty($_SESSION['errors']['email'])){
    echo $_SESSION['errors']['email'];
 }
 if(!empty($_SESSION['errors']['password'])){
    echo $_SESSION['errors']['password'];
 }
-if(!empty($_SESSION['errors']['empty'])){
-   echo $_SESSION['errors']['empty'];
-}
+
 
 ?>
 <!DOCTYPE html>
